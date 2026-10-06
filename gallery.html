@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Gallery ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            OUR STORY ❤️
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="memories.html">
+                Memories
+            </a>
+
+            <a
+                href="gallery.html"
+                class="active"
+            >
+                Gallery
+            </a>
+
+            <a href="story.html">
+                Our Story
+            </a>
+
+            <a href="reasons.html">
+                Reasons
+            </a>
+
+            <a href="message.html">
+                Message
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Gallery -->
+
+    <main class="gallery-page">
+
+
+        <div class="page-title">
+
+            <p class="small-text">
+                Little moments captured in time
+            </p>
+
+            <h1>
+                Our <span>Gallery ❤️</span>
+            </h1>
+
+            <p class="description">
+                A collection of pictures and moments
+                that make our story special.
+            </p>
+
+        </div>
+
+
+
+        <!-- Gallery Grid -->
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo1.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo2.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo3.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo4.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo5.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/photo6.jpg.png"
+                    alt="Gallery photo"
+                    onclick="openPhoto(this.src)"
+                >
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Floating Hearts -->
+
+    <div
+        class="hearts"
+        id="hearts"
+    ></div>
+
+
+
+    <script src="script.js"></script>
+    <div
+    id="photoViewer"
+    class="photo-viewer"
+    onclick="closePhoto()"
+>
+
+    <button
+        class="photo-close"
+        onclick="closePhoto()"
+    >
+        ×
+    </button>
+
+    <img
+        id="fullPhoto"
+        src=""
+        onclick="event.stopPropagation()"
+    >
+
+</div>
+
+</body>
+
+</html>

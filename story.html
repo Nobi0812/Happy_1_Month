@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Story ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            OUR STORY ❤️
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="memories.html">
+                Memories
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a
+                href="story.html"
+                class="active"
+            >
+                Our Story
+            </a>
+
+            <a href="reasons.html">
+                Reasons
+            </a>
+
+            <a href="message.html">
+                Message
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Our Story -->
+
+    <main class="story-page">
+
+
+        <div class="page-title">
+
+            <p class="small-text">
+                Every story has a beginning
+            </p>
+
+            <h1>
+                Our <span>Story ❤️</span>
+            </h1>
+
+            <p class="description">
+                Some moments become memories,
+                and some memories become stories.
+            </p>
+
+        </div>
+
+
+
+        <!-- Timeline -->
+
+        <div class="story-timeline">
+
+
+            <div class="story-card" onclick="openStory(1)">
+
+                <div class="story-number">
+                    01
+                </div>
+
+                <div class="story-content">
+
+                    <h2>
+                        Where It All Began
+                    </h2>
+
+                    
+
+                </div>
+
+            </div>
+
+
+
+            <div class="story-card" onclick="openStory(2)">
+
+                <div class="story-number">
+                    02
+                </div>
+
+                <div class="story-content">
+
+                    <h2>
+                        Getting to Know Each Other
+                    </h2>
+
+                    
+
+                </div>
+
+            </div>
+
+
+
+           <div class="story-card" onclick="openStory(3)">
+
+                <div class="story-number">
+                    03
+                </div>
+
+                <div class="story-content">
+
+                    <h2>
+                        The Moments We Shared
+                    </h2>
+
+                
+
+                </div>
+
+            </div>
+
+
+
+            <div class="story-card" onclick="openStory(4)">
+
+                <div class="story-number">
+                    04
+                </div>
+
+                <div class="story-content">
+
+                    <h2>
+                        More Memories Ahead
+                    </h2>
+
+                    
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Floating Hearts -->
+
+    <div
+        class="hearts"
+        id="hearts"
+    ></div>
+
+
+<!-- Story Popup -->
+
+<div id="storyPopup" class="story-popup">
+
+    <div class="story-popup-box">
+
+        <button
+            class="close-story"
+            onclick="closeStory()"
+        >
+            ×
+        </button>
+
+        <h2 id="storyPopupTitle"></h2>
+
+        <p id="storyPopupMessage"></p>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
